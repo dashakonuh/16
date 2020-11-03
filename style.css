@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    
+}
+#first{
+    height: 100%;
+    background-color: whitesmoke;
+}
+.header{
+   
+    height: 60px;
+   
+    padding-left: 80%;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.icons{
+    width: 60px;
+    height: 60px;
+}
+.main{
+    margin-top: 30px;
+}
+.maintext{
+    float:left;
+    width: 57%;
+    font-family: Gulim;
+    font-size: 70px;
+    text-align: left;
+    margin-left: 9%;
+    padding-top: 150px;
+}
+p{
+    font-size: 28px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.mainphoto{
+    float:left;
+    
+}
+.ann{
+    height: 620px;
+    width: 420px;
+}
+#second{
+    background-color: #878787;
+    height: 100%;
+}
+.slider {
+    margin-left: 7%;
+    float:left;
+  position: relative;
+  width: 480px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="switch"] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: white;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: white;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 480px;
+  height: 720px;
+  float: left;
+}
+
+#btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-480px);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-960px);
+}
+
+.abouttext{
+    margin-left: 40%;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: Gulim;
+}
+#third{
+    background-color: black;
+    height: 100%;
+    padding-top: 5%;
+   
+}
+* {box-sizing: border-box;}
+.photo {
+    float:left;
+    margin-right: 3.5%;
+    margin-left: 3.5%;
+  position: relative;
+  max-width: 400px;
+  transform: perspective(3000px) rotateY(20deg);
+    
+}
+.photo img {
+  display: block;
+  width: 100%;
+  box-shadow: -12px 11px 1px #f2f2f2;
+
+}
+.photo:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -22px;
+  top: 22px;
+  background: #cccccc;
+  z-index: -1;
+}
